@@ -21,8 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(title: Text(state.appTitle)),
       body: Center(
         child: Container(
-          width: 250,
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text("User id: "),
               Text(state.userId)
