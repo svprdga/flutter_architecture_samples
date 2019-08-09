@@ -20,16 +20,20 @@ class StateContainer extends StatefulWidget {
   }
 
   @override
-  _StateContainerState createState() => new _StateContainerState();
+  _StateContainerState createState() => new _StateContainerState(state: state);
 }
 
 class _StateContainerState extends State<StateContainer> {
   AppState state;
 
+  _StateContainerState({this.state});
+
   @override
   void initState() {
     super.initState();
-    state = AppState();
+    if (state == null) {
+      state = AppState();
+    }
   }
 
   @override

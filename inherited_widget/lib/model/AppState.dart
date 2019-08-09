@@ -8,6 +8,7 @@ class AppState {
 
   @override
   String toString() {
-    return "AppState{username: $username, password: $password}";
+    return "AppState{appTitle: $appTitle, username: $username, "
+        "password: $password, userId: $userId}";
   }
 }

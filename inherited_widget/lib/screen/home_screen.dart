@@ -24,7 +24,8 @@ class _HomeScreenState extends State<HomeScreen> {
           width: 250,
           child: Column(
             children: <Widget>[
-              Text("User id ${state.userId}"),
+              Text("User id: "),
+              Text(state.userId)
             ],
           ),
         ),
